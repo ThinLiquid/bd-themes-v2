@@ -1,12 +1,8 @@
-@import url(https://maendisease.github.io/BetterDiscordStuff/css/bettterInvites.css);
-@import url(https://cdn.jsdelivr.net/gh/Discord-Theme-Addons/modern-channel-indicators/src/support/ModernChannelIndicators.theme.css);
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url("https://crearts-community.github.io/Friends-Grid/theme.css");
 
 :root {
     --embed-border-radius: 8px;
     --embed-line-width: 512px;
-    --indicator-border-info: solid 2.5px;
 }
 
 * {
@@ -120,11 +116,25 @@ ROLE ICON
 CONTROL ICONS
 ------------*/
 
-.button-12Fmur:hover .contents-3ca1mk {animation: UserModalButtons 0.5s normal ease;}
-.container-YkUktl .noWrap-hBpHBz {width: 100px;opacity: 1;}
-  .button-12Fmur {transition: 0.2s;}
-  .button-12Fmur:hover {padding-bottom: 0px;transition: 0.2;}
-  @keyframes UserModalButtons {
+.button-12Fmur:hover .contents-3ca1mk {
+    animation: UserModalButtons 0.5s normal ease;
+}
+
+.container-YkUktl .noWrap-hBpHBz {
+    width: 100px;
+    opacity: 1;
+}
+
+.button-12Fmur {
+    transition: 0.2s;
+}
+
+.button-12Fmur:hover {
+    padding-bottom: 0px;
+    transition: 0.2;
+}
+
+@keyframes UserModalButtons {
     0% {
       transform: translateY(0px);
     }
@@ -134,7 +144,7 @@ CONTROL ICONS
     100% {
       transform: translateY(0px);
     }
-  }
+}
 
 /*------------
 DISCORD SPIN
