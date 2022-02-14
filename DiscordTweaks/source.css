@@ -1,0 +1,220 @@
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/bettterInvites.css);
+@import url(https://cdn.jsdelivr.net/gh/Discord-Theme-Addons/modern-channel-indicators/src/support/ModernChannelIndicators.theme.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://crearts-community.github.io/Friends-Grid/theme.css");
+
+:root {
+    --embed-border-radius: 8px;
+    --embed-line-width: 512px;
+    --indicator-border-info: solid 2.5px;
+}
+
+* {
+    font-family:Roboto;
+}
+
+/*------------
+BLUR TOP
+------------*/
+
+.newMessagesBar-1hF-9G.barBase-3xxDXu {
+    margin-top:50px;
+}
+
+.container-ZMc96U.themed-Hp1KC_, div.applicationStore-2nk7Lo > div > section, .searchHeader-1r_ZSh {
+    background:transparent;
+    backdrop-filter:blur(20px);
+}
+
+.content-1jQy2l {
+    margin-top:-50px;
+}
+
+div.applicationStore-2nk7Lo > div > div, div.content-1jQy2l > section > div {
+    margin-top:-25px;
+}
+
+.searchResultsWrap-5RVOkx {
+    margin-top:50px;
+}
+
+div.chat-2ZfjoI > div > div > aside > div, div.content-1jQy2l > section > div {
+    padding-top:25px;
+}
+
+div.container-36u7Lw > section {
+    background:var(--background-secondary)!important;
+}
+
+/*------------
+CHANNEL SCROLL
+------------*/
+
+#channels::-webkit-scrollbar {
+  display: none;
+}
+
+/*------------
+EMBEDS
+------------*/
+
+.embed-hKpSrO {
+    border-radius: var(--embed-border-radius);
+}
+.embed-hKpSrO code {
+    background: var(--background-secondary);
+}
+
+.grid-1aWVsE {
+    margin-left: calc( -1 * var(--embed-line-width));
+    z-index: 1;
+}
+
+.embedFull-1HGV2S {
+    border-left: calc(4px + var(--embed-line-width)) solid var(--background-accent);
+    background: var(--background-secondary);
+}
+
+.embedFull-1HGV2S:after, .embedFull-1HGV2S:before {
+    content: "";
+    height: 100%;
+    width: var(--embed-line-width);
+    position: absolute;
+    top: 0;
+    left: calc(-1 * var(--embed-line-width));
+}
+
+.embedFull-1HGV2S:after {
+    background: linear-gradient(to right, transparent, var(--background-secondary));
+}
+
+.embedFull-1HGV2S:before {
+    background: var(--background-secondary);
+    opacity: .8;
+}
+
+/*------------
+SPOILERS
+------------*/
+
+.spoilerText-27bIiA.hidden-3B-Rum .inlineContent-2YnoDy {
+    opacity:1!important;
+    filter:blur(5px);
+}
+
+.spoilerText-27bIiA {
+    background:rgba(0,0,0,0.1)!important;
+}
+
+/*------------
+ROLE ICON
+------------*/
+
+[class*="roleIcon"] {
+    float: left;
+    margin-left: 0rem;
+    margin-right: .25rem;
+}
+
+/*------------
+CONTROL ICONS
+------------*/
+
+.button-12Fmur:hover .contents-3ca1mk {animation: UserModalButtons 0.5s normal ease;}
+.container-YkUktl .noWrap-hBpHBz {width: 100px;opacity: 1;}
+  .button-12Fmur {transition: 0.2s;}
+  .button-12Fmur:hover {padding-bottom: 0px;transition: 0.2;}
+  @keyframes UserModalButtons {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+/*------------
+DISCORD SPIN
+------------*/
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(-20deg);
+    }
+    70% {
+        transform: rotate(380deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.pill-L_aLMQ.bd-selected + .listItemWrapper-3d87LP .homeIcon-r0w4ny {
+    animation: spin 0.8s ease;
+}
+
+/*------------
+URL COLORS
+------------*/
+
+[href*="discord.com/channels/"] {
+    color:var(--brand-experiment-500) !important;
+}
+[href*="discord.com/channels/"]::before {
+    content:'Jump to Message : ';
+    font-size:16px;
+    font-weight:700;
+    color: var(--brand-experiment-500);
+}
+[href*="betterdiscord.app/"],
+[href*="discord.gg/"],
+[href*="discord.com/"],
+[href*="media.discordapp.net/"],
+[href*="cdn.discordapp.com/"] {
+    color:var(--brand-experiment-500) !important;
+}
+
+[href*="reddit.com"],
+[href*="redd.it"] {
+    color:#e05a0c !important; 
+}
+
+[href*="instagram.com/"]{
+    background: -webkit-linear-gradient(80deg, rgb(255, 238, 0), rgb(255, 157, 11), #b700ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+
+[href*="twitter.com/"]{
+    color:#00acee !important;
+}
+
+[href*="imgur.com"],
+[href*="i.imgur.com"] {
+    color:#89C623 !important;
+    font-weight: 700;
+}
+
+[href*="osu.ppy.sh/"] {
+    color:#ff66aa !important; 
+}
+
+[href*="spotify.com"],
+[href*="open.spotify.com"]{
+    color:#13B94A !important; 
+}
+
+/*------------
+USER POPOUT
+------------*/
+
+.footer-3naVBw, .body-2wLx-E.thin-31rlnD.scrollerBase-_bVAAt, .userPopout-2j1gM4, .bodyInnerWrapper-2bQs1k {
+    background:none;
+    backdrop-filter:blur(20px);
+}
