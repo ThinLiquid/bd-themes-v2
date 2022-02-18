@@ -1,0 +1,31 @@
+@import url(https://thinliquid.github.io/bd-themes-v2/DiscordTweaks/source.css);
+
+html {
+  background:black;
+  background-size:cover;
+}
+
+:root {
+    --background-primary: black;
+    --background-secondary:black;
+    --background-secondary-alt: transparent;
+    --background-tertiary: transparent;
+    --background-accent: transparent;
+    --background-floating: black;
+    --background-nested-floating: black;
+    --background-mobile-primary: transparent;
+    --background-mobile-secondary: transparent;
+    --channeltextarea-background: black;
+    --activity-card-background: transparent;
+}
+
+.theme-dark .container-2cd8Mz, 
+div.scroller-3j5xK2.auto-2K3UW5.scrollerBase-_bVAAt, 
+.theme-dark .root-g14mjS,
+.theme-dark .footer-31IekZ {
+    background:transparent!important;
+}
+
+*::-webkit-scrollbar-track,  *::-webkit-scrollbar-thumb {
+  display:none;
+}
