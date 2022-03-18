@@ -3,6 +3,7 @@
 html {
   background:black;
   background-size:cover;
+  color:white;
 }
 
 :root {
@@ -17,16 +18,33 @@ html {
     --background-mobile-secondary: transparent;
     --channeltextarea-background: black;
     --activity-card-background: transparent;
+    --header-primary: white!important;
+    --header-secondary: white!important;
 }
 
-.theme-dark .container-2cd8Mz, 
-div.scroller-3j5xK2.auto-2K3UW5.scrollerBase-_bVAAt, 
-.theme-dark .root-g14mjS,
-.theme-dark .footer-31IekZ,
-.theme-dark .message-G6O-Wv {
-    background:transparent!important;
+.container-2McqkF,
+.selected-3H3-RC,
+.wrapper-3z7DuG > div > div,
+ul > div.wrapper-1NNaWG.categoryHeader-OpJ1Ly,
+#app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.chat-2ZfjoI > div.content-1jQy2l > main > form > div > div > div > div.autocomplete-3NRXG8.outerWrapper-3UdjNj > div > div.scroller-2MALzE.list-2u03C-.thin-31rlnD.scrollerBase-_bVAAt,
+#app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.pageWrapper-2PwDoS > div.scroller-3j5xK2.auto-2K3UW5.scrollerBase-_bVAAt,
+.theme-light *,
+#app-mount > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div > div > div > div.container-2cd8Mz > section,
+#online-tab,
+div.layer-1Ixpg3 > div > div,
+.footer-31IekZ,
+#app-mount > div:nth-child(7) > div.layer-1Ixpg3 > div > div > div.content-2hZxGK.content-26qlhD.thin-31rlnD.scrollerBase-_bVAAt > div.message-G6O-Wv,
+#uid_10 > div > div.calendarPicker-sDhzdi *,
+.scroller-18M1mG.thin-31rlnD.scrollerBase-_bVAAt *,
+.scroller-18M1mG.thin-31rlnD.scrollerBase-_bVAAt {
+    background:black!important;
 }
 
-*::-webkit-scrollbar-track,  *::-webkit-scrollbar-thumb {
-  display:none;
+h3,
+.scrollerBase-_bVAAt div {
+  color:white!important;
+}
+
+*::-webkit-scrollbar-track,  *::-webkit-scrollbar-thumb, .option-ayUoaq:after {
+  display:none!important;
 }
